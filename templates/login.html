@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Instagram Login Page</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="header">
+		<div class="top">
+			<div class="logo">
+				<img src="{{url_for('static', filename='instagram.png')}}" alt="instagram" style="width: 175px;">
+			</div>b
+			
+			
+			<section>
+				<div class="form">
+				<div class="input_field">
+				<form class="form" method="POST" action="#">
+					<input type="text" id="email" name="email" placeholder="Phone number, username, or email" class="input">
+				</div>
+				<div class="input_field">
+					<input type="password" placeholder="Password" id="password" name="password" class="input">
+				</div>
+				<button class="btn rounded-lg w-full text-white" type="submit">Log In</button>
+			</form>
+			</div>
+		</section>
+			<div class="or">
+				<div class="line"></div>
+				<p>OR</p>
+				<div class="line"></div>
+			</div>
+			<div class="dif">
+				<div class="fb">
+					<img src="{{url_for('static', filename='facebook.png')}}" alt="facebook">
+					<a href=""><p>Log in with Facebook</p>
+				</div>
+				<div class="forgot">
+					<a href="https://www.instagram.com/accounts/password/reset/">Forgot password?</a>
+				</div>
+			</div>
+		</div>
+		<div class="signup">
+			<p>Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a></p>
+		</div>
+		<div class="apps pl-100">
+			<p>Get the app.</p>
+			<div class="icons flex items-strech">
+				<div class="pl-100">
+				<a href="#"><img class="p-100" src="{{url_for('static', filename='appstore.png')}}" alt="appstore"></a></div>
+				<a href="#"><img src="{{url_for('static', filename='googleplay.png')}}" alt="googleplay"></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+
+		<div class="text-right copyright">
+			© 2021 INSTAGRAM
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
